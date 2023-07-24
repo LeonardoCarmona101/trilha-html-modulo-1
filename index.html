@@ -4,59 +4,275 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Módulo I - Primeiros Passos com HTML</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+<h1>Primeiros passos com HTML</h1>
+<hr>
+
+<h2 id="indice">Índice</h2>
+<ol>
+    <li><a href="#hist">História dos computadores</a></li>
+    <li><a href="#modCS">Modelo Cliente-Servidor</a></li>
+    <li><a href="#esBas">Estrutura básica de uma página HTML</a></li>
+    <li><a href="#uloldif">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+</ol>
+
+<h2 id="hist">1. História dos computadores</h2>
+
+<p>A história dos primeiros computadores até o surgimento dos 
+    smartphones é uma jornada fascinante de inovação e avanços 
+    tecnológicos. Vamos fazer um breve resumo dos principais 
+    marcos dessa evolução:
+</p>
+<ol>
+    <li><a href="#gen1">Primeiros Computadores (1940-1950)</a></li>
+    <li><a href="#gen2">Era dos Mainframes (1950-1960)</a></li>
+    <li><a href="#gen3">A Revolução dos Microprocessadores (1970-1980)</a></li>
+    <li><a href="#gen4">Computadores Pessoais e a Internet (1980-1990)</a></li>
+    <li><a href="#gen5">Era dos Smartphones (2000 em diante)</a></li>
+</ol>
+<h3 id="gen1">1. Primeiros Computadores (1940-1950)</h3>
+<p>
+    A era dos primeiros computadores eletrônicos começou na 
+    década de 1940. O ENIAC (Electronic Numerical Integrator 
+    and Computer), desenvolvido nos Estados Unidos em 1945, 
+    foi um dos primeiros computadores digitais de grande escala 
+    e desempenhou um papel importante durante a Segunda Guerra 
+    Mundial, realizando cálculos complexos para propósitos 
+    militares.
+</p>
+<h3 id="gen2">2. Era dos Mainframes (1950-1960)</h3>
+<p>
+    Na década de 1950, os computadores começaram a se tornar 
+    mais acessíveis para fins comerciais e científicos com o 
+    surgimento dos mainframes. Empresas e instituições 
+    utilizavam essas máquinas enormes para processar grandes 
+    quantidades de dados e realizar tarefas complexas.
+</p>
+<h3 id="gen3">3. A Revolução dos Microprocessadores (1970-1980)</h3>
+<p>
+    O desenvolvimento dos microprocessadores na década de 1970 
+    foi um divisor de águas na história da computação. 
+    A criação do primeiro microprocessador comercial, 
+    o Intel 4004, em 1971, abriu caminho para a popularização 
+    dos computadores pessoais.
+</p>
+<h3 id="gen4">4. Computadores Pessoais e a Internet (1980-1990)</h3>
+<p>
+    A década de 1980 viu o surgimento dos computadores pessoais 
+    (PCs), como o IBM PC e o Apple Macintosh. 
+    Esses dispositivos trouxeram a computação para o ambiente 
+    doméstico e desempenharam um papel crucial na disseminação 
+    da tecnologia. Além disso, a década de 1990 testemunhou o 
+    crescimento da Internet, conectando o mundo de uma forma 
+    nunca vista antes.
+</p>
+<h3 id="gen5">5. Era dos Smartphones (2000 em diante)</h3>
+<p>
+    O avanço da tecnologia de comunicação sem fio e dos 
+    microprocessadores permitiu a criação dos smartphones. 
+    O primeiro smartphone moderno, o iPhone, foi lançado 
+    pela Apple em 2007, revolucionando a indústria de telefonia 
+    móvel. Os smartphones combinaram funções de telefone, 
+    computador e câmera em um único dispositivo, permitindo 
+    acesso à Internet, aplicativos e comunicação instantânea.
+</p>
+<p>
+    Desde então, os smartphones evoluíram rapidamente, 
+    tornando-se dispositivos indispensáveis em nossas vidas. 
+    Com processadores cada vez mais poderosos, melhorias em 
+    conectividade e uma infinidade de aplicativos, eles se 
+    tornaram uma parte essencial do nosso dia a dia, facilitando
+     a comunicação, a produtividade e o entretenimento. 
+     A história da computação e dos dispositivos móveis 
+     continua em constante evolução, com novas tecnologias e 
+     inovações surgindo regularmente.
+</p>
+<h4><a href="#indice">Retornar ao índice</a></h4>
+
+<h2 id="modCS">2. Modelo Cliente-Servidor</h2>
+<p>
+    O modelo cliente-servidor é uma arquitetura de rede 
+    amplamente utilizada em sistemas de computação distribuídos.
+     Ele divide as funções de um sistema em duas partes 
+     distintas: o cliente e o servidor. Essa divisão permite 
+     que os sistemas distribuídos sejam escaláveis, 
+     mais eficientes e facilmente mantidos. Vamos entender 
+     cada um dos componentes:
+</p>
+<h3>2.1 Cliente:</h3>
+<p>
+    O cliente é a parte do modelo cliente-servidor que interage 
+    diretamente com o usuário ou aplicativo final. Ele é 
+    responsável por enviar solicitações ao servidor e receber 
+    as respostas correspondentes. Os clientes podem ser 
+    aplicativos, programas ou dispositivos que requerem algum 
+    tipo de serviço ou informação do servidor. Ao receber os 
+    dados do servidor, o cliente pode processá-los, exibi-los 
+    para o usuário ou tomar outras ações apropriadas.
+</p>
+<p>Algumas características importantes do cliente incluem:</p>
+<ul>
+    <li><strong>Interface com o Usuário:</strong> O cliente geralmente possui 
+        uma interface gráfica ou de linha de comando que 
+        permite ao usuário interagir com o sistema e enviar 
+        solicitações específicas ao servidor.</li>
+    <li><strong>Processamento Limitado: </strong>Em comparação 
+        com o servidor, o cliente geralmente tem recursos 
+        limitados de processamento e armazenamento, já que 
+        a maioria das tarefas de processamento pesado é 
+        realizada no servidor.</li>
+    <li><strong>Independência: </strong>O cliente e o servidor 
+        podem ser desenvolvidos independentemente, desde que 
+        sigam um protocolo de comunicação comum que permita a 
+        troca de dados.</li>
+</ul>
+<h3>2.2 Servidor:</h3>
+<p>O servidor é a parte do modelo cliente-servidor que fornece 
+    os serviços solicitados pelo cliente. Ele é responsável 
+    por receber as solicitações do cliente, processá-las e 
+    enviar de volta as respostas apropriadas. Os servidores 
+    têm maior poder de processamento e capacidade de 
+    armazenamento em comparação com os clientes, pois precisam 
+    lidar com múltiplas solicitações simultâneas de diversos 
+    clientes.
+</p>
+<p>Algumas características importantes do servidor incluem:</p>
+<ul>
+    <li><strong>Disponibilidade Contínua: </strong>Os servidores
+         são projetados para operar continuamente e estar 
+         disponíveis para atender as solicitações dos clientes
+          a qualquer momento.</li>
+    <li><strong>Processamento de Dados: </strong>O servidor 
+        executa as tarefas principais do sistema, como 
+        processamento de lógica de negócios, acesso a bancos 
+        de dados, processamento de arquivos, etc.</li>
+    <li><strong>Segurança: </strong>Os servidores são 
+        responsáveis por garantir a segurança das informações 
+        e aplicar políticas de acesso adequadas.</li>
+</ul>
+<p>
+    Em resumo, o modelo cliente-servidor é uma abordagem de 
+    comunicação em que os clientes solicitam serviços ou 
+    recursos do servidor, que, por sua vez, responde às 
+    solicitações e fornece os dados ou serviços necessários. 
+    Essa arquitetura tem sido fundamental para o desenvolvimento
+     de sistemas distribuídos e aplicativos em rede que 
+     utilizamos em nossas vidas diárias, como navegadores web, 
+     aplicativos de redes sociais e serviços online em geral.
+</p>
+<h4><a href="#indice">Retornar ao índice</a></h4>
+
+<h2 id="esBas">3. Estrutura básica de uma página <abbr title="Hypertext Markup Language">HTML</abbr></h2>
+<p>Uma página HTML (Hypertext Markup Language) é a base 
+    fundamental de qualquer site na web. Ela é composta 
+    por uma estrutura básica que define o conteúdo e a 
+    apresentação da página. Aqui está um breve resumo da 
+    estrutura básica de uma página HTML:
+</p>
+<h3>Declaração do Documento: </h3>
+<p>
+    No início de qualquer página HTML, é necessário declarar 
+    o tipo de documento usando a seguinte tag: <mark>!DOCTYPE html</mark>
+</p>
+<h3>Elemento html</h3>
+<p>O elemento <mark>html</mark> é o contêiner principal de todo o 
+    documento HTML. Ele engloba todo o conteúdo da página. 
+</p>
+<h3>Elemento head</h3>
+<p>
+Dentro do elemento <mark>html</mark>, o próximo elemento 
+é o <mark>head</mark>. 
+    O elemento <mark>head</mark> contém informações sobre a página, 
+        como o título exibido na aba do navegador, meta 
+        informações para SEO, scripts, estilos e outras 
+        configurações.
+    </p>
+<h3>Elemento body</h3>
+<p>
+    O elemento <mark>body</mark> contém o conteúdo visível da página, 
+        como texto, imagens, links, formulários e outros 
+        elementos. É dentro do <mark>body</mark> que a maioria dos 
+            elementos visuais e interativos são colocados.
+</p>
+<h3>Outros elementos</h3>
+<p>
+    Dentro do <mark>body</mark>, você pode usar diversos elementos HTML 
+        para estruturar e formatar o conteúdo da página. 
+        Alguns exemplos comuns incluem: 
+</p>
+<ul>
+    <li><mark>h1</mark>, <mark>h2</mark>, <mark>h3</mark>, ...
+    <mark>h6</mark>: Cabeçalhos de diferentes níveis.</li>
+    <li><mark>p</mark>: Parágrafos de texto.</li>
+    <li><mark>a</mark>: Links para outras páginas ou recursos.</li>
+    <li><mark>img</mark>: Imagens.</li>
+    <li><mark>ul</mark> e <mark>li</mark>: Listas não ordenadas.</li>
+    <li><mark>ol</mark> e <mark>li</mark>: Listas ordenadas.</li>
+    <li><mark>div</mark> e <mark>span</mark>: Elementos de divisão usados para 
+        agrupar e estilizar conteúdo.</li>
+</ul>
+<h3>Comentários</h3>
+<p>
+    Você também pode adicionar comentários dentro do código 
+    HTML para explicar partes específicas do código ou fazer 
+    anotações para outros desenvolvedores. Comentários não 
+    são exibidos na página e são adicionados usando 
+    < !-- no início e --> no final:
+</p>
+<h4><a href="#indice">Retornar ao índice</a></h4>
+
+<h2 id="uloldif">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+<p>As principais diferenças entre uma lista ordenada e não 
+    ordenada em HTML são as seguintes:
+</p>
+<h3>Lista Não Ordenada (Unordered List - <strong>ul</strong>>):</h3>
+<ul>
+    <li>A lista não ordenada é usada para criar 
+        listas de itens sem uma ordem específica.</li>
+    <li>Os itens são marcados com "bullets" (pontos ou círculos) por padrão, 
+        mas a aparência pode ser estilizada usando CSS.</li>
+    <li>A tag utilizada para criar uma lista não ordenada é <mark>ul</mark>.</li>
+    <li>Cada item da lista é representado pelo elemento <mark>li</mark> (item de lista).</li>
+</ul>
+<h3>Lista Ordenada (Ordered List - <strong>ol</strong>>):</h3>
+<ol>
+    <li>A lista ordenada é usada para criar listas de 
+        itens em uma ordem numérica ou alfabética.</li>
+    <li>Os itens são numerados ou alinhados alfabeticamente por padrão, 
+        mas também podem ser estilizados usando CSS.</li>
+    <li>A tag utilizada para criar uma lista ordenada é <mark>ol</mark>.</li>
+    <li>Cada item da lista é representado pelo elemento <mark>li</mark>> (item de lista), assim como na lista não ordenada.</li>
+</ol>
+<p>
+    Em resumo, a principal diferença entre as listas ordenadas 
+    e não ordenadas em HTML é a apresentação visual dos itens. 
+    Na lista não ordenada, os itens são marcados com "bullets" 
+    (pontos ou círculos), enquanto na lista ordenada, os itens 
+    são numerados ou alinhados alfabeticamente por padrão. 
+    Ambos os tipos de listas são usados para organizar 
+    informações e criar uma estrutura 
+    mais clara e legível para o conteúdo de uma página da web.
+</p>
+<h2 id="ref">Referências</h2>
+<ol>
+    <li>MDN Web Docs (Mozilla Developer Network)</li>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li>O <a target="_blank" href="https://developer.mozilla.org/pt-BR/">MDN Web Docs</a> é uma excelente fonte 
+            de documentação detalhada e guias para HTML, 
+            CSS e outras tecnologias web. É mantido pela 
+            Mozilla Foundation e contém informações atualizadas 
+            e precisas.</li>
     </ul>
-
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <li>W3Schools</li>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li>O <a target="_blank" href="https://www.w3schools.com/">W3Schools</a> é um site popular que oferece tutoriais 
+            interativos e exemplos práticos para aprender HTML, 
+            CSS e muitas outras tecnologias web. É uma ótima 
+            opção para iniciantes.</li>
     </ul>
-
+</ol>
 </body>
 </html>
